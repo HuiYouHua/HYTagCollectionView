@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" restorationIdentifier="HYCollectionViewCell" reuseIdentifier="HYCollectionViewCell" id="gTV-IL-0wX" customClass="HYCollectionViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="167" height="45"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="167" height="45"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kc0-tN-mIr">
+                        <rect key="frame" x="0.0" y="0.0" width="167" height="45"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <nil key="textColor"/>
+                        <color key="highlightedColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                <integer key="value" value="15"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mPj-xu-hr9">
+                        <rect key="frame" x="0.0" y="0.0" width="15" height="15"/>
+                        <color key="backgroundColor" red="0.46274509800000002" green="0.46666666670000001" blue="0.47058823529999999" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="15" id="BCf-Ks-9Il"/>
+                            <constraint firstAttribute="height" constant="15" id="q6z-t3-J5p"/>
+                        </constraints>
+                        <state key="normal" title="X">
+                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </state>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                <real key="value" value="7.5"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                        <connections>
+                            <action selector="delete:" destination="gTV-IL-0wX" eventType="touchUpInside" id="1kA-0x-3KO"/>
+                        </connections>
+                    </button>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="Kc0-tN-mIr" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="9Ch-6Q-CGb"/>
+                <constraint firstItem="Kc0-tN-mIr" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="RJP-Uf-mVG"/>
+                <constraint firstItem="mPj-xu-hr9" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="RZA-ce-IfH"/>
+                <constraint firstItem="mPj-xu-hr9" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="XN0-cl-3Zb"/>
+                <constraint firstAttribute="bottom" secondItem="Kc0-tN-mIr" secondAttribute="bottom" id="obW-pq-J2E"/>
+                <constraint firstAttribute="trailing" secondItem="Kc0-tN-mIr" secondAttribute="trailing" id="vfi-LD-7lp"/>
+            </constraints>
+            <size key="customSize" width="167" height="45"/>
+            <connections>
+                <outlet property="deleteBtn" destination="mPj-xu-hr9" id="1eJ-3b-G38"/>
+                <outlet property="textLable" destination="Kc0-tN-mIr" id="EsI-ji-NHk"/>
+            </connections>
+            <point key="canvasLocation" x="20.5" y="39.5"/>
+        </collectionViewCell>
+    </objects>
+</document>
